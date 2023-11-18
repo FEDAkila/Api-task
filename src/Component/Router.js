@@ -10,7 +10,7 @@ import {Details} from './Details'
 
 export const Router=()=>{
     return(
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
             <Route path="/" element={<Home/>}>   </Route>
             <Route path="/Details"  element={<Details/>}></Route>
